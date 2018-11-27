@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InformationTopCellID" rowHeight="179" id="KGk-i7-Jjw" customClass="InformationTopCell">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="179"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="178.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4U7-1o-Jvm">
+                        <rect key="frame" x="0.0" y="2" width="330" height="175"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nwN-3L-wc6">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="145"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J2-MB-mtG">
+                                <rect key="frame" x="0.0" y="145" width="330" height="30"/>
+                                <color key="backgroundColor" red="0.45786976439790572" green="0.45786976439790572" blue="0.45786976439790572" alpha="0.46287677304964536" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nwN-3L-wc6" secondAttribute="bottom" constant="30" id="01c-zH-4GB"/>
+                            <constraint firstItem="2J2-MB-mtG" firstAttribute="leading" secondItem="4U7-1o-Jvm" secondAttribute="leading" id="5x0-xg-oZL"/>
+                            <constraint firstItem="2J2-MB-mtG" firstAttribute="top" secondItem="nwN-3L-wc6" secondAttribute="bottom" id="7ut-on-cfW"/>
+                            <constraint firstAttribute="trailing" secondItem="nwN-3L-wc6" secondAttribute="trailing" id="E2O-gJ-gOO"/>
+                            <constraint firstAttribute="bottom" secondItem="2J2-MB-mtG" secondAttribute="bottom" id="OO2-dX-XuL"/>
+                            <constraint firstItem="nwN-3L-wc6" firstAttribute="leading" secondItem="4U7-1o-Jvm" secondAttribute="leading" id="PmE-ek-z39"/>
+                            <constraint firstItem="nwN-3L-wc6" firstAttribute="top" secondItem="4U7-1o-Jvm" secondAttribute="top" id="oyS-Tn-F9S"/>
+                            <constraint firstAttribute="trailing" secondItem="2J2-MB-mtG" secondAttribute="trailing" id="xIR-Ow-0d0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4U7-1o-Jvm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="52q-xX-m4I"/>
+                    <constraint firstAttribute="bottom" secondItem="4U7-1o-Jvm" secondAttribute="bottom" constant="1" id="Q6f-i6-R7d"/>
+                    <constraint firstAttribute="trailing" secondItem="4U7-1o-Jvm" secondAttribute="trailing" id="bET-nt-SNj"/>
+                    <constraint firstItem="4U7-1o-Jvm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="xBB-T2-n2b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageUrl1" destination="nwN-3L-wc6" id="o0T-9h-dXY"/>
+                <outlet property="titleLable" destination="2J2-MB-mtG" id="qqX-la-PuC"/>
+            </connections>
+            <point key="canvasLocation" x="342" y="222.5"/>
+        </tableViewCell>
+    </objects>
+</document>

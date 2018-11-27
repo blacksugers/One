@@ -1,0 +1,89 @@
+//
+//  SGPrefixHeader.pch
+//  One
+//
+//  Created by tarena on 15/12/31.
+//  Copyright © 2015年 Sugar. All rights reserved.
+//
+
+#ifndef SGPrefixHeader_pch
+#define SGPrefixHeader_pch
+//分类
+#import "UIButton+SG.h"
+#import "UIView+SG.h"
+#import "UIBarButtonItem+SG.h"
+
+//第三方库
+#import "UIImageView+WebCache.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD+MJ.h"
+
+//主控制器
+#import "SGMainViewController.h"
+#import "SGNavigationController.h"
+#import "SGHomeViewController.h"
+#import "SGQuestionViewController.h"
+//新闻
+#import "InformationViewController.h"
+
+#import "SGSomethingViewController.h"
+#import "SGProfileViewController.h"
+
+
+//模型类
+#import "SGSentence.h"
+#import "SGQuestion.h"
+#import "SGSomething.h"
+//数据库
+#import "SGDataCenter.h"
+//视图类
+#import "SGSentenceView.h"
+#import "SGHomeView.h"
+#import "SGButton.h"
+#import "SGShareView.h"
+
+//主题色
+#define SGBlue [UIColor colorWithRed:40/255.0 green:181/255.0 blue:241/255.0 alpha:1]
+//随机色
+#define SGRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1]
+
+#define SGBlueWithAlpha(A) [UIColor colorWithRed:99/255.0 green:181/255.0 blue:238/255.0 alpha:A]
+
+//边框距离
+#define SGHomeMargin 8
+#define SGQuestionMargin 20
+#define SGWidth [UIScreen mainScreen].bounds.size.width 
+
+
+
+
+//####1. 1-1新闻 要闻_________________________________________
+#define kInformationYaoWen @"http://hot.news.cntv.cn/index.php?controller=list&action=getHandDataInfoNew&handdata_id=TDAT1372928688333145&n1=1&n2=20&toutuNum=%d"
+
+//1-2. 新闻 时政
+#define kInformationShiZheng @"http://hot.news.cntv.cn/index.php?controller=list&action=getHandDataInfoNew&handdata_id=TDAT1414661661499136&n1=1&n2=20&toutuNum=%d"
+
+//1-3.新闻  军事
+#define kInformationJunShi @"http://hot.news.cntv.cn/index.php?controller=list&action=getHandDataInfoNew&handdata_id=TDAT1383125722766236&n1=1&n2=20&toutuNum=%d"
+
+//1-4.新闻 体育
+#define kInformationTiYu @"http://hot.news.cntv.cn/index.php?controller=list&action=getHandDataInfoNew&handdata_id=TDAT1383126274316527&n1=1&n2=20&toutuNum=%d"
+
+//1-5.新闻财经
+#define kInformationCaiJing @"http://hot.news.cntv.cn/index.php?controller=list&action=getHandDataInfoNew&handdata_id=TDAT1383126577835657&n1=1&n2=20&toutuNum=%d"
+
+//1-6.新闻 社会
+#define kInformationSheHui @"http://hot.news.cntv.cn/index.php?controller=list&action=getHandDataInfoNew&handdata_id=TDAT1383126850500788&n1=1&n2=20&toutuNum=%d"
+
+//1-7.图片
+#define kInformationTuPian @"http://hot.news.cntv.cn/index.php?controller=list&action=morelist&handdata_id=TDAT1373943452289972&n=20"
+//####2.导入常用的宏
+#define kScreenSize [UIScreen mainScreen].bounds.size
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//通过RGB设置颜色
+#define kRGBColor(R,G,B)  [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0]
+
+
+#endif
